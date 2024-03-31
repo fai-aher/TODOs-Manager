@@ -1,24 +1,13 @@
-import logo from './platzi.webp';
-import './App.css';
+import React from 'react';
+import { TodoProvider } from './contexts/TodoContext';
+import { AppUI } from './AppUI';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edita el archivo <code>src/App.js</code> y guarda para recargar.
-        </p>
-        <a
-          className="App-link"
-          href="https://platzi.com/reactjs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App() { //Convención para crear un componente en React: Iniciar con mayúscula
+
+  return ( //Esto es la sintaxis JSX, que es una extensión de JavaScript que permite escribir HTML(XML) dentro de un archivo .js en React
+    <TodoProvider>
+      <AppUI />
+    </TodoProvider>
   );
 }
 
