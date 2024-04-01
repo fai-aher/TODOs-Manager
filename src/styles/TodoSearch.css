@@ -30,6 +30,7 @@
 .TodoSearch:hover {
     background-color: #3d0076;
     box-shadow: 0px 5px 25px rgba(73, 255, 252, 0.5);
+    color: white;
 }
 
 .TodoSearch:hover::placeholder {

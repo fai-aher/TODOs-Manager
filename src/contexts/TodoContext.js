@@ -22,7 +22,7 @@ function TodoProvider( {children} ) {
     const [searchValue, setSearchValue] = React.useState('');
     React.useEffect(() => {
     console.log('Se está buscando el siguiente To-Do: ', searchValue);
-    }, [searchValue]);
+    }, [searchValue]);  
 
     //Estado derivado de SearchValue
     const searchedTodos = todos.filter(
